@@ -10,10 +10,6 @@ A sample Node.js app to demonstrate **__fabric-client__** & **__fabric-ca-client
 * **Node.js** v6.9.0 - 6.10.0 ( __Node v7+ is not supported__ )
 * [Download Docker images](http://hyperledger-fabric.readthedocs.io/en/latest/samples.html#binaries)
 
-```
-cd fabric-samples/balance-transfer/
-```
-
 Once you have completed the above setup, you will have provisioned a local network with the following docker container configuration:
 
 * 2 CAs
@@ -39,11 +35,6 @@ docker-compose -f artifacts/docker-compose.yaml up
 ```
 ##### Terminal Window 2
 
-* Install the fabric-client and fabric-ca-client node modules
-
-```
-npm install
-```
 
 * Start the node app on PORT 4000
 
@@ -61,7 +52,7 @@ PORT=4000 node app
 ##### Terminal Window 1
 
 ```
-cd fabric-samples/balance-transfer
+cd fabric-restful-API
 
 ./runApp.sh
 
@@ -80,7 +71,7 @@ instructions [https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)
 
 With the application started in terminal 1, next, test the APIs by executing the script - **testAPIs.sh**:
 ```
-cd fabric-samples/balance-transfer
+cd fabric-restful-API
 
 ./testAPIs.sh
 
